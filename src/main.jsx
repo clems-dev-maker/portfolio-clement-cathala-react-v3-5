@@ -1,5 +1,6 @@
 import React, { Component, useEffect, useMemo, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { Analytics } from "@vercel/analytics/react";
 import "./styles.css";
 
 const projects = [
@@ -700,4 +701,11 @@ function App() {
   );
 }
 
-createRoot(document.getElementById("root")).render(<ErrorBoundary><App /></ErrorBoundary>);
+createRoot(document.getElementById("root")).render(
+  <>
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
+    <Analytics />
+  </>
+);
