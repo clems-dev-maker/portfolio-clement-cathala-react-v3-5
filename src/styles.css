@@ -733,3 +733,80 @@ html[data-theme="light"] { color-scheme: light; }
   .capability-note { grid-template-columns:1fr; }
   .project-meta-row { flex-direction:column; gap:5px; }
 }
+
+/* DevFest Toulouse */
+.devfest-container {
+  max-width: 1200px;
+  margin: 1.5rem auto 2rem;
+  padding: 0 1.5rem;
+}
+
+.devfest-callout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel);
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.devfest-callout:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.devfest-callout-icon {
+  display: grid;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--panel-2);
+  color: var(--accent);
+  font-size: 1.4rem;
+}
+
+.devfest-callout-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.devfest-callout-copy strong {
+  color: var(--text);
+  font-size: 13px;
+}
+
+.devfest-callout-copy small {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.devfest-callout-arrow {
+  margin-left: auto;
+  color: var(--accent-2);
+  font-size: 18px;
+}
+
+@media (max-width: 560px) {
+  .devfest-container {
+    padding: 0 1rem;
+  }
+
+  .devfest-callout {
+    width: 100%;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .devfest-callout-copy small {
+    font-size: 10px;
+  }
+}

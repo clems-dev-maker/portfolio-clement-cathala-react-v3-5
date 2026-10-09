@@ -637,6 +637,25 @@ function App() {
           </div>
         </section>
 
+        <div className="container devfest-container">
+  <a
+    className="devfest-callout"
+    href="https://devfesttoulouse.fr/fr"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Informations sur le DevFest Toulouse du 19 novembre 2026"
+  >
+    <span className="devfest-callout-icon" aria-hidden="true">✦</span>
+    <span className="devfest-callout-copy">
+      <strong>Présent au DevFest Toulouse</strong>
+      <small>
+        19 novembre 2026 · Diagora, Labège — parlons développement et alternance
+      </small>
+    </span>
+    <span className="devfest-callout-arrow" aria-hidden="true">↗</span>
+  </a>
+</div>
+
         <section id="contact" className="section container contact-section">
           <div className="section-heading reveal"><div><span className="section-kicker">07 / CONTACT</span><h2>Parlons d'un projet, d'une alternance ou d'une opportunité.</h2></div></div>
           <div className="contact-grid">
